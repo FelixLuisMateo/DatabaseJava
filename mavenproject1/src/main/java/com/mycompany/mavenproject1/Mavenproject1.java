@@ -37,21 +37,21 @@ public class Mavenproject1 {
             }else if(order == 2){
                 productname = "blanca";
                 price = 75;
-            }else if(order == 2){
+            }else if(order == 3){
                 productname = "coockies";
                 price = 89;
-            }else if(order == 2){
+            }else if(order == 4){
                 productname = "brown";
                 price = 60;
-            }else if(order == 2){
+            }else if(order == 5){
                 productname = "black";
                 price = 20;
             }else{
                 System.out.println("Invalid Choice");
             }
             System.out.println(productname);
-                System.out.print("Price" +price);
-                System.out.println("Enter Your Quantity!");
+                System.out.print("Price: "  +price);
+                System.out.println("\nEnter Your Quantity!");
                 int quant = input.nextInt();
                 
                 
@@ -65,7 +65,7 @@ public class Mavenproject1 {
                 
                 double all = total - discount;
                        
-                System.out.println("Subtotal is!" + total);
+                System.out.println("Total is!" + total);
                 if(discount > 0){
                     System.out.println("your total is!" + discount);
                 }
@@ -80,6 +80,11 @@ public class Mavenproject1 {
                         System.out.println("Issuficient Cash! Try again");
                     }
                 }
+                System.out.print("\nDo you want to order Drinks? (yes/no): ");
+                String again = input.next();
+                if (again.equalsIgnoreCase("no")) {
+                System.out.println("Goodbye! Come again.");
+            }
                      
                 double change = cash - total;
                 System.out.println("Payment Accepted");
