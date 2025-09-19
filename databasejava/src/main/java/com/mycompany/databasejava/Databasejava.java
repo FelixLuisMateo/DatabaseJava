@@ -16,7 +16,7 @@ public class Databasejava {
 
     public static Connection conn() {
         try {
-                String url = "jdbc:ucanaccess://C://Users//Student//OneDrive//Documents//Database21.accdb";
+                String url = "jdbc:ucanaccess://C://Users//ALDRIN REGASPI//Documents//NetBeansProjects//dsaact2a//databasejava//src//main//java//com//mycompany//databasejava//DatabaseJava.accdb";
                 Connection conn = DriverManager.getConnection(url);
                 return conn;
             } catch (SQLException e) {
